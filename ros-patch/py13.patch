@@ -1,0 +1,16 @@
+diff --git a/include/pybind11/detail/type_caster_base.h b/include/pybind11/detail/type_caster_base.h
+index 48e218b2..03dfa102 100644
+--- a/include/pybind11/detail/type_caster_base.h
++++ b/include/pybind11/detail/type_caster_base.h
+@@ -479,7 +479,11 @@ PYBIND11_NOINLINE std::string error_string() {
+                 "  " + handle(f_code->co_filename).cast<std::string>() +
+                 "(" + std::to_string(lineno) + "): " +
+                 handle(f_code->co_name).cast<std::string>() + "\n";
++#if PY_VERSION_HEX >= 0x03110000
++            frame = PyFrame_GetBack(frame);
++#else
+             frame = frame->f_back;
++#endif
+             Py_DECREF(f_code);
+         }
+     }

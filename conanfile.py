@@ -60,7 +60,7 @@ class Recipe(ConanFile):
             --symlink-install \
             --merge-install \
             --event-handlers console_cohesion+ console_package_list+ \
-            --packages-up-to rcl_interfaces rclpy rclcpp std_msgs ros2cli launch\
+            --packages-skip my-test-package \
             --cmake-args \
             --no-warn-unused-cli \
             -DINSTALL_EXAMPLES=ON \

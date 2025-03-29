@@ -1,4 +1,26 @@
+action_msgs==1.2.1
+actionlib_msgs==4.8.0
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_clang_format&subdirectory=build/ament_clang_format
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_clang_tidy&subdirectory=build/ament_clang_tidy
+ament_cmake_google_benchmark==1.3.11
+ament_cmake_test==1.3.11
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_copyright&subdirectory=build/ament_copyright
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_cppcheck&subdirectory=build/ament_cppcheck
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_cpplint&subdirectory=build/ament_cpplint
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_flake8&subdirectory=build/ament_flake8
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_index_python&subdirectory=build/ament_index_python
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_lint&subdirectory=build/ament_lint
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_lint_cmake&subdirectory=build/ament_lint_cmake
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_mypy&subdirectory=build/ament_mypy
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_package&subdirectory=build/ament_package
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_pclint&subdirectory=build/ament_pclint
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_pep257&subdirectory=build/ament_pep257
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_pycodestyle&subdirectory=build/ament_pycodestyle
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_pyflakes&subdirectory=build/ament_pyflakes
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_uncrustify&subdirectory=build/ament_uncrustify
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ament_xmllint&subdirectory=build/ament_xmllint
 argcomplete==3.6.0
+builtin_interfaces==1.2.1
 catkin-pkg==1.0.0
 colcon-argcomplete==0.3.3
 colcon-bash==0.5.0
@@ -22,15 +44,30 @@ colcon-recursive-crawl==0.2.3
 colcon-ros==0.5.0
 colcon-test-result==0.3.8
 colcon-zsh==0.5.0
+composition_interfaces==1.2.1
 conan2==0.0.4
 coverage==7.6.12
+diagnostic_msgs==4.8.0
 distlib==0.3.9
 docutils==0.21.2
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=domain_coordinator&subdirectory=build/domain_coordinator
 empy==3.3.4
+geometry_msgs==4.8.0
 iniconfig==2.0.0
 lark==1.2.2
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch&subdirectory=build/launch
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch_pytest&subdirectory=build/launch_pytest
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch_ros&subdirectory=build/launch_ros
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch_testing&subdirectory=build/launch_testing
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch_testing_ros&subdirectory=build/launch_testing_ros
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch_xml&subdirectory=build/launch_xml
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=launch_yaml&subdirectory=build/launch_yaml
+lifecycle_msgs==1.2.1
 markdown-it-py==3.0.0
 mdurl==0.1.2
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=my_test_package&subdirectory=build/my-test-package
+nav_msgs==4.8.0
+netifaces==0.11.0
 numpy==2.2.4
 packaging==24.2
 pluggy==1.5.0
@@ -45,9 +82,62 @@ pytest-rerunfailures==15.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 PyYAML==6.0.2
+rcl_interfaces==1.2.1
+rclpy==3.3.15
+rcutils==5.1.6
 rich==13.9.4
-rpyutils==0.1.4
+rmw_dds_common==1.6.0
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2action&subdirectory=build/ros2action
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2cli&subdirectory=build/ros2cli
+ros2cli_test_interfaces==0.18.11
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2component&subdirectory=build/ros2component
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2doctor&subdirectory=build/ros2doctor
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2interface&subdirectory=build/ros2interface
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2launch&subdirectory=build/ros2launch
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2lifecycle&subdirectory=build/ros2lifecycle
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2multicast&subdirectory=build/ros2multicast
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2node&subdirectory=build/ros2node
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2param&subdirectory=build/ros2param
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2pkg&subdirectory=build/ros2pkg
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2run&subdirectory=build/ros2run
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2service&subdirectory=build/ros2service
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2topic&subdirectory=build/ros2topic
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=ros2trace&subdirectory=build/ros2trace
+rosgraph_msgs==1.2.1
+rosidl_adapter==3.1.6
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=rosidl_cli&subdirectory=build/rosidl_cli
+rosidl_cmake==3.1.6
+rosidl_generator_c==3.1.6
+rosidl_generator_cpp==3.1.6
+rosidl_generator_dds_idl==0.8.1
+rosidl_generator_py==0.14.4
+rosidl_parser==3.1.6
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=rosidl_runtime_py&subdirectory=build/rosidl_runtime_py
+rosidl_typesupport_c==2.0.2
+rosidl_typesupport_cpp==2.0.2
+rosidl_typesupport_fastrtps_c==2.2.2
+rosidl_typesupport_fastrtps_cpp==2.2.2
+rosidl_typesupport_introspection_c==3.1.6
+rosidl_typesupport_introspection_cpp==3.1.6
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=rpyutils&subdirectory=build/rpyutils
+sensor_msgs==4.8.0
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=sensor_msgs_py&subdirectory=build/sensor_msgs_py
 setuptools==76.0.0
+shape_msgs==4.8.0
 six==1.17.0
+statistics_msgs==1.2.1
+std_msgs==4.8.0
+std_srvs==4.8.0
+stereo_msgs==4.8.0
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=test_launch_ros&subdirectory=build/test_launch_ros
+test_msgs==1.2.1
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=test_tracetools_launch&subdirectory=build/test_tracetools_launch
 tqdm==4.67.1
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=tracetools_launch&subdirectory=build/tracetools_launch
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=tracetools_read&subdirectory=build/tracetools_read
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=tracetools_test&subdirectory=build/tracetools_test
+-e git+https://github.com/Vladivostoks/ROS2_Base.git@d2e8174e67190a037581f6b1a51a2f1649135912#egg=tracetools_trace&subdirectory=build/tracetools_trace
+trajectory_msgs==4.8.0
+unique_identifier_msgs==2.2.1
 vcstool==0.3.0
+visualization_msgs==4.8.0

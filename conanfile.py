@@ -45,22 +45,29 @@ class Recipe(ConanFile):
         tc.generate()
 
     def build(self):
+        build_type = self.settings.get_safe("build_type", default="Release")
+
         self.run(f"source venv/bin/activate\
         && mkdir -p src \
         && export PYTHONPATH=\"{self.source_folder}/venv/lib/python3.13/site-packages:$PYTHONPATH\"\
         && vcs import src < ros2_base.repos \
+        && cp ros-patch/py13.patch src/ros2/pybind11_vendor\
+        && cp ros-patch/pybind11_vendor.patch src/ros2/pybind11_vendor\
+        && cd src/ros2/pybind11_vendor \
+            git restore || git apply pybind11_vendor.patch\
+        && cd -\
         && colcon build \
             --symlink-install \
             --merge-install \
             --event-handlers console_cohesion+ console_package_list+ \
-            --packages-up-to rclcpp std_msgs ros2cli launch\
+            --packages-up-to rcl_interfaces rclpy rclcpp std_msgs ros2cli launch\
             --cmake-args \
             --no-warn-unused-cli \
-            -DBUILD_TESTING=OFF \
             -DINSTALL_EXAMPLES=ON \
             -DCMAKE_PREFIX_PATH={self.generators_folder}\
-            -DAsio_INCLUDE_DIR={self.dependencies["asio"].package_folder}/include\
-            -Dtinyxml2_DIR={self.dependencies["tinyxml2"].package_folder}\
+            -DCMAKE_BUILD_TYPE=\"{build_type}\"\
+            -DAsio_INCLUDE_DIR={self.dependencies['asio'].package_folder}/include\
+            -Dtinyxml2_DIR={self.dependencies['tinyxml2'].package_folder}\
             ",
             cwd=self.source_folder)
 

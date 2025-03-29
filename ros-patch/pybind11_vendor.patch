@@ -1,13 +1,16 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 309a628..72158e3 100644
+index 309a628..5481484 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -75,6 +75,9 @@ macro(build_pybind11)
+@@ -73,8 +73,11 @@ macro(build_pybind11)
+     # the internal pybind11 variable to be called PYBIND11_DEBUG, which avoids
+     # the issue.
      PATCH_COMMAND
-       ${CMAKE_COMMAND} -E chdir <SOURCE_DIR> git apply -p1 --ignore-space-change --whitespace=nowarn
+-      ${CMAKE_COMMAND} -E chdir <SOURCE_DIR> git apply -p1 --ignore-space-change --whitespace=nowarn
++      git -C <SOURCE_DIR> apply -p1 --ignore-space-change --whitespace=nowarn
          ${CMAKE_CURRENT_SOURCE_DIR}/pybind11-2.9.1-fix-windows-debug.patch
 +    PATCH_COMMAND
-+      ${CMAKE_COMMAND} -E chdir <SOURCE_DIR> git apply -p1 --ignore-space-change --whitespace=nowarn
++      git -C <SOURCE_DIR> apply -p1 --ignore-space-change --whitespace=nowarn
 +        ${CMAKE_CURRENT_SOURCE_DIR}/py13.patch
    )
  

@@ -6,7 +6,7 @@ index 48e218b2..03dfa102 100644
                  "  " + handle(f_code->co_filename).cast<std::string>() +
                  "(" + std::to_string(lineno) + "): " +
                  handle(f_code->co_name).cast<std::string>() + "\n";
-+#if PY_VERSION_HEX >= 0x03110000
++#if PY_VERSION_HEX >= 0x30b0000
 +            frame = PyFrame_GetBack(frame);
 +#else
              frame = frame->f_back;

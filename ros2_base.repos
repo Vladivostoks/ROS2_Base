@@ -55,6 +55,10 @@ repositories:
     type: git
     url: https://github.com/ros2/rclcpp.git
     version: humble
+  ros2/rclpy:
+    type: git
+    url: https://github.com/ros2/rclpy.git
+    version: humble
   ros2/rcl:
     type: git
     url: https://github.com/ros2/rcl.git
@@ -88,6 +92,10 @@ repositories:
   ros2/rosidl_runtime_py:
     type: git
     url: https://github.com/ros2/rosidl_runtime_py.git
+    version: humble
+  ros2/rosidl_python:
+    type: git
+    url: https://github.com/ros2/rosidl_python.git
     version: humble
   ros2/rosidl_typesupport:
     type: git
@@ -169,6 +177,10 @@ repositories:
     type: git
     url: https://github.com/ros2/rcpputils.git
     version: humble
+  ros2/rpyutils:
+    type: git
+    url: https://github.com/ros2/rpyutils.git
+    version: humble
 # ==============================================
 # ROS Test(Unit/Bench Test)
 # ==============================================
@@ -191,4 +203,15 @@ repositories:
   ros2/libyaml_vendor:
     type: git
     url: https://github.com/ros2/libyaml_vendor.git
+    version: humble
+# ==============================================
+# python build 
+# ==============================================
+  ros2/pybind11_vendor:
+    type: git
+    url: https://github.com/ros2/pybind11_vendor.git
+    version: humble
+  ros2/python_cmake_module:
+    type: git
+    url: https://github.com/ros2/python_cmake_module.git
     version: humble

@@ -72,7 +72,8 @@ class Recipe(ConanFile):
             cwd=self.source_folder)
 
     def package(self):
-        pass
+        self.run(f"cp -rf build {self.package_folder}", cwd=self.source_folder)
+        self.run(f"cp -rf install {self.package_folder}", cwd=self.source_folder)
 
     def package_info(self):
         pass
